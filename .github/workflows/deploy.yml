@@ -40,5 +40,7 @@ jobs:
           node-version: 18
       - name: install dependies
         run: npm ci
+      - name: run build
+        run: npm run build
       - name: deploy
         run: echo "deploying...."
