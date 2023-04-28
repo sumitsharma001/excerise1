@@ -31,14 +31,14 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-      steps:
-        - name: checkout code
-          users: actions/checkout@v3
-        - name: install node js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
-        - name: install dependies
-          run: nmp ci
-        - name: deploy
-          run: echo "deploying...."
+    steps:
+      - name: checkout code
+        users: actions/checkout@v3
+      - name: install node js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: install dependies
+        run: nmp ci
+      - name: deploy
+        run: echo "deploying...."
