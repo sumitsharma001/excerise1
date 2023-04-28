@@ -1,0 +1,11 @@
+name: get github object context
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get context
+        run: echo "${{ toJson(github) }}"
