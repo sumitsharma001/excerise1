@@ -39,6 +39,6 @@ jobs:
         with:
           node-version: 18
       - name: install dependies
-        run: nmp ci
+        run: npm ci
       - name: deploy
         run: echo "deploying...."
